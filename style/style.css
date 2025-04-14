@@ -1,0 +1,81 @@
+/* Definindo o fundo da página */
+.body {
+    background-color: rgb(0, 0, 0); /* Cor de fundo preta */
+    text-align: left;
+  }
+  
+  /* Estilo para os textos com a classe .letra */
+  .letra {
+    color: white; /* Cor do texto em branco */
+    font-size: 40px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-family: 'Arial', sans-serif; /* Define a família da fonte como Arial, com sans-serif como alternativa */
+  }
+  
+  /* Estilo do botão .botao */
+  .botao {
+    border-radius: 10px; /* Bordas arredondadas para criar um botão mais suave */
+    color: rgb(255, 255, 255); /* Cor do texto do botão (branco) */
+    background-color: #000094; /* Cor de fundo do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão (em cima/embaixo e lateral) */
+    display: block; /* Faz o botão se comportar como um bloco, o que o centraliza */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    text-decoration: none; /* Remove o sublinhado, caso o botão seja um link */
+    font-size: 16px; /* Tamanho da fonte do texto no botão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves para a cor e o movimento */
+  }
+  
+  /* Estilo para o botão quando o mouse passa sobre ele */
+  .botao:hover {
+    background-color: #0e076d; /* Cor de fundo mais clara ao passar o mouse */
+    transform: translateY(-5px); /* Move o botão um pouco para cima */
+  }
+  
+  /* Estilo para o botão quando ele é pressionado */
+  .botao:active {
+    transform: translateY(2px); /* Move o botão um pouco para baixo quando clicado */
+    background-color: rgb(50, 40, 40); /* Cor mais escura quando o botão é pressionado */
+  }
+  
+  img {
+    border-radius: 15px;
+    max-width: px; /* Aumenta o tamanho máximo das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  figure.figure img {
+    max-width: 300px; /* Aumenta o tamanho do logo */
+    border-radius: 15px;
+  }
+  
+  .img {
+    margin-left: 50px;
+  }
+  
+  /* Estilo para as imagens no carrossel */
+  .carousel-item img {
+    max-width: 400px; /* Aumenta o tamanho das imagens no carrossel */
+    height: auto;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+  
+  /* Estilo para o botão da imagem */
+  .img button img {
+    max-width: 200px; /* Aumenta o tamanho da imagem do botão */
+    height: auto;
+  }
+  
+  /* Adicionando margem entre as colunas de imagens */
+  .img .col-lg-3, .img .col-md-4, .img .col-sm-6 {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  

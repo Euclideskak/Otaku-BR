@@ -1,0 +1,48 @@
+
+/* Estilo para o texto "𝑀𝒶𝓃𝑔𝒶" no canto superior esquerdo */
+.letra {
+    position: absolute; /* Posiciona o texto de forma absoluta em relação ao elemento pai */
+    top: 20px; /* Distância do topo da página (20px) */
+    left: 20px; /* Distância da esquerda da página (20px) */
+    color: white; /* Define a cor do texto como branca */
+    font-size: 50px; /* Define o tamanho da fonte como 50px */
+    font-family: 'Arial', sans-serif; /* Define a família da fonte como Arial, com sans-serif como alternativa */
+}
+
+/* Estilo para as imagens */
+img {
+    width: 250px; /* Define a largura das imagens como 250px */
+    height: 250px; /* Define a altura das imagens como 250px */
+    object-fit: cover; /* Faz com que a imagem cubra a área da caixa sem distorcer */
+    margin-top: 40px; /* Espaço de 40px acima das imagens */
+    margin-right: 9px; /* Espaço de 9px à direita das imagens */
+    margin-left: 50px; /* Espaço de 50px à esquerda das imagens */
+    border-radius: 50px; /* Arredonda os cantos da imagem com um raio de 10px */
+}
+
+/* Link clicável */
+a {
+    display: inline-block; /* Faz com que o link seja exibido como um bloco em linha */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: aliceblue;
+}
+
+.container-image {
+    display: inline-block; /* Faz as imagens ficarem na mesma linha (como blocos em linha) */
+    margin-right: 20px; /* Define um espaço de 20px à direita de cada imagem */
+}
+
+/* Efeito de zoom nas imagens ao passar o mouse */
+.container-image img {
+    transition: transform 0.5s ease; /* Aplica uma transição suave de 0.5 segundos para a transformação da imagem */
+}
+
+.container-image img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 30% quando o mouse passa por cima */
+}
+
+/* Link para as imagens */
+a img {
+    cursor: pointer; /* Altera o cursor para uma mãozinha, indicando que a imagem é clicável */
+    text-decoration: none;
+}

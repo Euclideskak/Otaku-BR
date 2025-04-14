@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga</title>
+    <link rel="stylesheet" href="style/style-manga.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+       .body {
+            background-color: rgb(0, 0, 0); /* Cor de fundo preta */
+            text-align: left;
+        }
+
+        figure.figure {
+            margin: 30px 0 30px 0;
+            padding: 0;
+            text-align: left; /* Alinha o logo à esquerda */
+        }
+
+        figure.figure img {
+            max-width: 150px; /* Ajuste do tamanho do logo */
+            border-radius: 15px;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .imagem {
+            position: relative;
+            width: 450px;
+            height: 380px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: width 1.3s ease, box-shadow 1.3s ease;
+            cursor: pointer;
+        }
+
+        .imagem img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 1.3s ease;
+        }
+
+        .imagem:hover {
+            width: 700px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            background-color: #222;
+            border: 3px solid #000094;
+            border-radius: 50px;
+        }
+
+        .descricao {
+            position: absolute;
+            top: 30%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #fff;
+            font-size: 1em;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: opacity 1.2s ease;
+            white-space: nowrap;
+            padding-top: 150px;
+        }
+
+        .imagem:hover .descricao {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .imagem {
+                width: 100%;
+                height: auto;
+            }
+
+            .imagem img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <figure class="figure">
+        <img src="img/img.a/Design sem nome (1) (1).png" class="figure-img img-fluid" alt="Logo Manga">
+        <figcaption class="figure-caption"></figcaption> <!-- Legenda vazia, não exibida -->
+    </figure>
+
+    <!-- Navbar -->
+    <div style="border: 5px solid #000094; border-radius: 35px;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border-radius: 30px;">
+            <a class="navbar-brand" href="#">Otaku BR</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Ícone que aparece nas telas pequenas -->
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manga.html">Manga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Menos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Galeria de Mangas -->
+    <div class="galeria">
+        <!-- Manga 1 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/My hero manga.jpg" alt="Bleach">
+            </a>
+            <div class="descricao">
+                📚 My Hero Academia (Mangá) 📚<br>
+                🖊 Autor: Kōhei Horikoshi<br>
+                📅 Início: Julho 2014<br>
+                📖 Capítulos: +380 (em andamento)<br>
+                📚 Volumes: +40 (em andamento)<br>
+                🗞 Publicado em: Weekly Shōnen Jump
+            </div>
+        </div>
+
+        <!-- Manga 2 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/mushoku tensei.jpg" alt="Blue Lock">
+            </a>
+            <div class="descricao">
+                📚 Mushoku Tense (Mangá) 📚<br>
+                🖊 Autor: Rifujin na Magonote (História)<br>
+                📅 Início: 23 de janeiro de 2014<br>
+                📖 Capítulos: 103+ (em andamento)<br>
+                📚 Volumes: 24+ (em andamento)<br>
+                🗞 Publicado em: Comic Rush
+            </div>
+        </div>
+
+        <!-- Manga 3 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/SoloLeveling_manga.webp" alt="My Hero Academia">
+            </a>
+            <div class="descricao">
+                📚 Solo Leveling (Mangá) 📚<br>
+                🖊 Autor: Chugong (História), Dubu (Arte)<br>
+                📅 Início: 14 de março de 2018<br>
+                📖 Capítulos: 179 (concluído)<br>
+                📚 Volumes: 14 (concluído)<br>
+                🗞 Publicado em: KakaoPage
+            </div>
+        </div>
+
+        <!-- Manga 4 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/Kaiju n 8.jpg" alt="Jujutsu Kaisen">
+            </a>
+            <div class="descricao">
+                📚 Kaiju No. 8 (Mangá) 📚<br>
+                🖊 Autor: Naoya Matsumoto<br>
+                📅 Início: Julho 2020<br>
+                📖 Capítulos: 80+ (em andamento)<br>
+                📚 Volumes: 9+ (em andamento)<br>
+                🗞 Publicado em: Shonen Jump+
+            </div>
+        </div>
+
+        <!-- Manga 5 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/dragon-ball-super-volume-18-capa-720x1122 m.jpg" alt="Dragon Ball Super">
+            </a>
+            <div class="descricao">
+                📚 Dragon Ball Super (Mangá) 📚<br>
+                🖊 Autor: Akira Toriyama<br>
+                📅 Início: Junho 2015<br>
+                📖 Capítulos: +100 (em andamento)<br>
+                📚 Volumes: +18 (em andamento)<br>
+                🗞 Publicado em: V Jump
+            </div>
+        </div>
+
+        <!-- Manga 6 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/One piace m.webp" alt="One Piece">
+            </a>
+            <div class="descricao">
+                📚 One Piece (Mangá) 📚<br>
+                🖊 Autor: Eiichiro Oda<br>
+                📅 Início: Julho 1997<br>
+                📖 Capítulos: 1090+ (em andamento)<br>
+                📚 Volumes: +105 (em andamento)<br>
+                🗞 Publicado em: Weekly Shōnen Jump
+            </div>
+        </div>
+
+        <!-- Manga 7 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/naruto.jpg" alt="Naruto">
+            </a>
+            <div class="descricao">
+                📚 Naruto (Mangá) 📚<br>
+                🖊 Autor: Masashi Kishimoto<br>
+                📅 Início: Outubro 1999<br>
+                📖 Capítulos: 700 (concluído)<br>
+                📚 Volumes: 72 (concluído)<br>
+                🗞 Publicado em: Weekly Shōnen Jump
+            </div>
+        </div>
+
+        <!-- Manga 8 -->
+        <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/atacaon taikan m.webp" alt="Attack on Titan">
+            </a>
+            <div class="descricao">
+                📚 Attack on Titan (Mangá) 📚<br>
+                🖊 Autor: Hajime Isayama<br>
+                📅 Início: Setembro 2009<br>
+                📖 Capítulos: 139 (concluído)<br>
+                📚 Volumes: 34 (concluído)<br>
+                🗞 Publicado em: Bessatsu Shōnen Magazine
+            </div>
+        </div>
+
+        <!
+                🖊 Autor: ONE<br>
+                📅 Início: 18 de abril de 2012<br>
+                📖 Capítulos: 101 (concluído)<br>
+                📚 Volumes: 16 (concluído)<br>
+                🗞 Publicado em: Ura Sunday & MangaONE
+            </div>
+        </div>
+
+         <!-- Manga 10 -->
+         <div class="imagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <img src="img/img.m/anos voldigoad m.jpg" alt="Bleach">
+            </a>
+            <div class="descricao">
+                📚 TMDKA (Mangá)📚<br>
+                🖊 Autor: Shu (História)<br>
+                📅 Início: 13 de março de 2018<br>
+                📖 Capítulos: 70+ (em andamento)<br>
+                📚 Volumes: 10+ (em andamento)<br>
+                🗞 Publicado em: Monthly Dragon Age
+            </div>
+        </div>
+
+cation.href='mais_manga.html'">Mais Mangas</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
